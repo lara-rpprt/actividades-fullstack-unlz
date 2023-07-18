@@ -5,7 +5,7 @@ Crear TODO list:
 - Tiene que tener un botón que le permita al usuario registrar esa nueva tarea
 - Cuando el usuario toca el botón para registrar la tarea, esta debe agregarse y verse en un listado debajo del campo de texto; el campo de texto debe quedar en
 
-/ -------- Funciones de array: -------- /
+/ -------- Métodos de array: -------- /
 Métodos no destructivos
 
 listaDeTareas.join("caracter")
@@ -22,3 +22,17 @@ Clase 07.06.2023: método sort
 ---
 
 Clase 08.06.2023
+.slice - Método no destructivo
+Método para crear sólo algunos índices:
+listaDeTareas.silce(parámetroDeInicio, parámetroDeFinal);
+Para guardarlo en otro array:
+let listaRecortada = listaDeTareas.slice(0,2);
+// recorte desde la posición cero hasta la dos (sin incluirla)
+
+.splice - Método destructivo y mutativo
+Este método permite eliminar elementos de un array;
+
+---
+
+.indexOf()
+Recibe por parámetro el elemento que querés buscar.
