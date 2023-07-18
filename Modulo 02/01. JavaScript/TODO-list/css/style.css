@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: radial-gradient(circle, rgb(53 112 124) 0%, rgb(37 58 82) 89%);
+  /* background-color: #161a24; */
+  /* background: rgb(27, 76, 133); */
+  /* background: radial-gradient(
+    circle,
+    rgba(27, 76, 133, 1) 0%,
+    rgba(22, 26, 36, 1) 89%
+  );
+  */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(img/journey_bgr.png);
+  width: 350px;
+  height: 550px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+/* ----------------------- Input ----------------------- */
+
+input {
+  border-radius: 3px;
+  width: 80%;
+  /* background-color: #a5b3ac91; */
+  background-color: #182b31e0;
+  border: none;
+  text-align: center;
+  color: #e6e0e0;
+  font-size: 16px;
+}
+
+input::placeholder {
+  align-items: center;
+  text-align: center;
+  color: #e6e0e0;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus,
+input:hover {
+  background-color: #192c42;
+  transition: 0.3s all;
+}
+
+.input_text_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------------------- Button: agregar tarea ----------------------- */
+
+#btn_agregar {
+  border: none;
+  background-color: #182b31e0;
+  color: #e6e0e0;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#btn_agregar:hover {
+  background: #192c42;
+  transition: 0.3s all;
+}
+
+#btn_agregar:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px #0000003d;
+  /* Lowering the shadow */
+}
+
+/* -----------------------  Output card ----------------------- */
+
+#output_card {
+  /* background-color: #a5b3ac91; */
+
+  background-color: #182c338c;
+  border-radius: 5px;
+  height: 87%;
+  overflow-y: auto;
+}
+
+/* Output card scrollbar */
+#output_card::-webkit-scrollbar {
+  width: 10px;
+  padding-top: 5px;
+}
+
+#output_card::-webkit-scrollbar-thumb {
+  background: #04070865;
+  border-radius: 5px;
+}

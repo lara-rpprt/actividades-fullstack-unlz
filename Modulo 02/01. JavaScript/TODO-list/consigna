@@ -1,0 +1,24 @@
+Clase 07.06.2023
+Crear TODO list:
+
+- Tiene que tener un campo de texto en el que el usuario pueda ingresar su nueva tarea
+- Tiene que tener un botón que le permita al usuario registrar esa nueva tarea
+- Cuando el usuario toca el botón para registrar la tarea, esta debe agregarse y verse en un listado debajo del campo de texto; el campo de texto debe quedar en
+
+/ -------- Funciones de array: -------- /
+Métodos no destructivos
+
+listaDeTareas.join("caracter")
+Ejemplo:
+let listaSeparadaPorGuion = listaDeTareas.join("");
+
+listaDeTareas.forEach((recibeFunciónDeCallBack => {
+// código a ejecutar para cada elemento del arreglo
+}))
+
+Métodos destructivos
+Clase 07.06.2023: método sort
+
+---
+
+Clase 08.06.2023

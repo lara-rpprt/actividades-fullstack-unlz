@@ -1,0 +1,51 @@
+.lista {
+  color: #e6e0e0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarea:hover {
+  background: #192c42;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.tarea {
+  font-size: 14px;
+  max-width: 95%;
+  display: flex;
+  background-color: #182b31e0;
+  min-height: 40px;
+  margin: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  /* word-break: break-all; */
+  white-space: pre-wrap;
+  height: fit-content;
+  line-height: 150%;
+}
+
+button.btn_eliminar {
+  background-image: url(img/btn_eliminar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  min-width: 20px;
+  height: 20px;
+  border: none;
+  margin-left: 12px;
+}
+
+button.btn_eliminar:hover {
+  cursor: pointer;
+}
+
+button.btn_eliminar:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px #0000003d;
+  /* Lowering the shadow */
+}
